@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "project": ["./tsconfig.json"]
+  },
+  "env": {
+    "es2020": true,
+    "browser": true
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "arrow-parens": "off",
+    "object-curly-newline": "off",
+    "no-mixed-operators": "off",
+    "function-paren-newline": "off",
+    "space-before-function-paren": 0,
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-explicit-any": "error"
+  }
+}
